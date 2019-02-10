@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
-$primary-color: #444;
+$primary-color: rgb(68, 68, 68);
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -28,5 +28,30 @@ $background-opacity: 0.9;
         z-index: -1;
       }
     }
+  }
+}
+
+//Media Query Mixin
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171 px) {
+    @content;
   }
 }
