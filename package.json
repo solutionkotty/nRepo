@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My portfolio",
   "main": "index.js",
-  "homepage": "https://solutionkotty.github.io/modern_portfolio",
+  "homepage": "https://solutionkotty.github.io/nrepo",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
